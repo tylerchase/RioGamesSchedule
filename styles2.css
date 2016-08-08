@@ -1,0 +1,106 @@
+.mdl-layout__drawer .mdl-navigation .mdl-navigation__link{
+  padding: 12px;
+}
+.mdl-color-text--blue-grey-200 .material-icons .myclass{
+  font-size: 18px;
+}
+.mdl-layout__drawer .mdl-navigation{
+  padding-top: 4px;
+}
+
+.demo-card-wide.mdl-card {
+  width: auto;
+}
+.demo-card-wide > .mdl-card__title {
+  color: #fff;
+  height: 326px;
+  background: url('http://www.twinkl.co.uk/image/resource_preview_xlarge/NZ-T-T-25623-Rio-Olympics-2016-Bunting.jpg') center / cover;
+}
+.demo-card-wide > .mdl-card__menu {
+  color: #fff;
+}
+
+.mdl-card__supporting-date{
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, .1);
+  z-index: 1;
+  width: 100%;
+
+}
+
+.mdl-card__supporting-text{
+  text-align: center;
+  width:99%;
+  border-bottom: 1px white;
+  background-color: #F5f5f5;
+  height: 16px;
+  display:inline-block;
+}
+.mdl-card__supporting-text-inside{
+  font-size:12px;
+  border-bottom: 5px white;
+  width:100%;
+}
+.mdl-card__supporting-text-inside:hover{
+  background-color: white;
+}
+
+.mdl-card__supporting-text:hover{
+  background-color: #c1c1c1;
+}
+.dateAlign{
+  text-align: left;
+  font-size:16px;
+}
+.timeAlign{
+  text-align: right;
+  font-size: 10px
+}
+.mdl-grid{
+  height:auto;
+  width:100%;
+  padding-bottom: 2px;
+}
+.mdl-card__supporting-event{
+  height:16px;
+  display: inline-block;
+  width:100%;
+}
+
+.mdl-card{
+  min-height: 25px;
+}
+mdl-card content-column mdl-cell 6-col text-event {
+  height:25px;
+  width:350px;
+}
+mdl-card content-column mdl-cell 6-col text-date{
+  height: 25px;
+  width:350px;
+}
+.mdl-card .content-column .mdl-cell--6-col{
+  width:100%;
+  height:25px;
+  font-size: 12px;
+}
+#events{
+  text-align: right;
+}
+#date{
+  text-align: center;
+}
+#eventsTitle{
+  text-align: right;
+}
+#dateTitle{
+  text-align: center;
+}
+p {
+  margin-bottom: 2px;
+  font-weight: bold;
+}
+.mdl-layout__obfuscator.is-visible {
+  background-color: rgba(0, 0, 0, 0);
+  visibility: visible;
+  opacity: 0;
+}
