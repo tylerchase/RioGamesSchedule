@@ -8,8 +8,7 @@ $(document).ready(function(){
   }
   $.ajax(getData).done(function (xmlData) {
     var x2js = new X2JS()
-    var jsonData = x2js.xml_str2json(xmlData)
-    console.log(jsonData)
+    jsonData = x2js.xml_str2json(xmlData)
   })
 })
 
@@ -18,17 +17,13 @@ $(document).ready(function(){
     var bigDataObjects = [];
 
     var image = $(this).children("embed").attr('src')
-    console.log(image)
-    $('.demo-card-wide > .mdl-card__title').empty()
-
-
+    $('.mdl-card__title').css("background", "grey").css("background-image", 'url("'+image+'")').css('background-repeat', 'no-repeat').css('background-position', '50% 20%')
     $("#events").empty()
     $("#dates").empty()
     $(".mdl-card__title-text").empty()
     var sportsArray = $(this);
     $('.mdl-card__title-text').append(this.text)
     var sport = sportsArray['0'].classList['2'].replace(/-/g, ' ')
-    // console.log(sport)
     for (var newEvent of jsonData.olympics["season-schedule"].sports.sport){
       var sportInDataOBJ = newEvent['_description'].toLowerCase()
       // match up the selected sport to the sport in the data.js
@@ -56,14 +51,8 @@ $(document).ready(function(){
         }
       }
   }
-  // console.log(bigDataArray)
-  // console.log("bigdataobj", bigDataObjects)
+
   var sortedBigDataObject = _.sortBy(bigDataObjects, "_start_date")
-  // console.log("sortedBigDataObject ", sortedBigDataObject)
-
-
-
-
     for (sportsObject of sortedBigDataObject) {
       if(sportsObject['_name']=== "" ||sportsObject['_start_date'] === undefined){
         var normalSportEventDetails = $("<div>")
